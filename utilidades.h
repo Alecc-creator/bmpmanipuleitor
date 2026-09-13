@@ -1,0 +1,6 @@
+#ifndef UTILIDADES_H_INCLUDED
+#define UTILIDADES_H_INCLUDED
+
+void mostrarHelp();
+
+#endif // UTILIDADES_H_INCLUDED

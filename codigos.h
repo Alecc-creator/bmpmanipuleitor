@@ -1,0 +1,15 @@
+#ifndef CODIGOS_H_INCLUDED
+#define CODIGOS_H_INCLUDED
+
+typedef enum
+{
+    TODO_OK = 0,
+    ERROR_ARGUMENTOS = 1,
+    ERROR_ARCHIVO = 2,
+    ERROR_MEMORIA = 3,
+    ERROR_BMP_INVALIDO = 4,
+    ERROR_BUSQUEDA = 5
+}CodigoRetorno;
+
+
+#endif // CODIGOS_H_INCLUDED

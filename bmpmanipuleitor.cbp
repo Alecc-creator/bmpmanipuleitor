@@ -31,9 +31,30 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="argumentos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="argumentos.h" />
+		<Unit filename="bmp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="bmp.h" />
+		<Unit filename="codigos.h" />
+		<Unit filename="filtros.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="filtros.h" />
+		<Unit filename="funciones_grupo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="funciones_grupo.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="utilidades.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="utilidades.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
