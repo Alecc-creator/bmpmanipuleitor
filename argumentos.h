@@ -66,11 +66,16 @@ typedef struct
     uint8_t cantidadArchivos;
 } OpcionesPrograma;
 
-int validarArgumentos(int argc, char* argv[], OpcionesPrograma* opciones);
-int buscarEnFiltros(const char *argumento, OpcionesPrograma *opciones, uint8_t *encontrado);
-int buscarEnUtilidades(const char *argumento, OpcionesPrograma *opciones, uint8_t *encontrado);
-int buscarArchivo(const char *argumento);
+void inicializarOpciones(OpcionesPrograma *opciones);
 
+int validarArgumentos(int argc, char* argv[], OpcionesPrograma* opciones);
+int buscarEnFiltros(const char *argumento, OpcionesPrograma* opciones);
+int buscarEnUtilidades(const char *argumento, OpcionesPrograma* opciones);
+int buscarArchivo(const char *argumento, OpcionesPrograma* opciones);
+int validarCantidadDeArchivos(const OpcionesPrograma* opciones);
+int validarConcatenaciones(const OpcionesPrograma* opciones);
 int validarRango(int valor, int li, int ls);
+
+int atoi_alu(const char* cadena, int* valor);
 
 #endif // ARGUMENTOS_H_INCLUDED

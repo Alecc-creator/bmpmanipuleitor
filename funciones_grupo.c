@@ -7,5 +7,5 @@ int procesarImagen(int argc, char* argv[])
 
     ret = validarArgumentos(argc, argv, &opciones);
 
-    return TODO_OK;
+    return ret;
 }
