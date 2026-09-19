@@ -15,9 +15,9 @@
 
 typedef struct
 {
-    uint8_t rojo;
-    uint8_t verde;
     uint8_t azul;
+    uint8_t verde;
+    uint8_t rojo;
 }Pixel;
 
 typedef struct
