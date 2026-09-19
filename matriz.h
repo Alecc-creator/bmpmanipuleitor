@@ -3,6 +3,7 @@
 
 #include <stddef.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 void* crearMatriz(int filas, int columnas, size_t tamElem);
 void destruirMatriz(void** mat, int filas);

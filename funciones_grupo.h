@@ -24,6 +24,7 @@
 #include "bmp.h"
 #include "argumentos.h"
 #include "filtros.h"
+#include "matriz.h"
 
 
 int procesarImagen(int argc, char* argv[]);

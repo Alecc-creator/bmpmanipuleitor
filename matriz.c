@@ -5,7 +5,7 @@ void* crearMatriz(int filas, int columnas, size_t tamElem)
     if(filas <= 0 || columnas <= 0 || tamElem == 0)
         return NULL;
 
-    void* mat = malloc(filas* sizeof(void*));
+    void** mat = malloc(filas* sizeof(void*));
     if(!mat)
         return NULL;
 
