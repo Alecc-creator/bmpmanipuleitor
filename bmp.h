@@ -4,12 +4,14 @@
 #include <stdint.h>
 #include <stdio.h>
 #include "codigos.h"
+#include "matriz.h"
 
 #define PROFUNDIDAD             24
 #define TAM_FIRMA_BMP           2
 #define OFFSET_TAMANIO_ARCHIVO  2
 #define OFFSET_INICIO_PIXELES   10
 #define OFFSET_ANCHO            18
+#define OFFSET_ALTO             22
 #define OFFSET_PLANOS           26
 
 
@@ -35,9 +37,21 @@ typedef struct
     uint32_t tamImagen;
 }CabeceraBMP;
 
+typedef struct
+{
+    CabeceraBMP cabecera;
+    Pixel** imagen;
+}ImagenBMP;
+
 int validarArchivoLectura(const char* nomArch);
 int validarBMP(const char* nomArch);
-
 int leerCabeceraBMP(FILE* arch, CabeceraBMP* cabecera);
+
+int crearImagenBMP(ImagenBMP* bmp);
+void destruirImagenBMP(ImagenBMP* bmp);
+int obtenerAltoReal(int32_t alto);
+uint8_t calcularPadding(int32_t ancho);
+int leerPixelesBMP(FILE* archivo, ImagenBMP* bmp);
+int cargarBMP(const char* arch, ImagenBMP* bmp);
 
 #endif // BMP_H_INCLUDED
